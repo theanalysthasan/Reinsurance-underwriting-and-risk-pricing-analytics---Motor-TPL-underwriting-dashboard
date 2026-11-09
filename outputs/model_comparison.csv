@@ -1,0 +1,3 @@
+model,holdout_poisson_deviance
+Poisson GLM,0.34550931735330254
+XGBoost Poisson,0.34602998707318194
