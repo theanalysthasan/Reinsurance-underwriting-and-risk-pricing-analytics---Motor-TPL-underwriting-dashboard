@@ -29,12 +29,3 @@ pip install -r requirements.txt
 - Lowering retention to 50k cuts annual-loss volatility ~30% vs ~15% at 250k, at higher net cost of cover.
 - Caveat: small segments (e.g. 65+) are volatile because of single large claims; production use needs credibility weighting.
 
-## Power BI
-Import from `outputs/`: `segment_profitability.csv`, `policy_pricing.csv`, `retention_options.csv`, `reinsurance_summary.csv`, `freq_glm_coefficients.csv`. Suggested pages: (1) Portfolio KPIs, (2) Segment heat-map (combined ratio), (3) Rate adequacy & recommendations, (4) XoL retention what-if. `dashboard_preview.png` shows the intended visuals.
-
-## CV entry
-**P&C Reinsurance Underwriting & Risk Pricing Analytics** | Python, SQL, Power BI
-- Built a frequency-severity pricing framework (Poisson and Gamma GLMs, XGBoost benchmark) on a 120k-policy synthetic motor TPL portfolio; GLM matched the ML benchmark on holdout Poisson deviance.
-- Derived risk-loaded technical premiums via compound-Poisson variance; flagged 13 of 30 segments with combined ratio above 100%.
-- Simulated a 400k xs 100k excess-of-loss treaty (Pareto tail, Monte Carlo): expected layer loss, reinsurance premium, and retention trade-offs.
-- Delivered SQL segment analytics and a Power BI underwriting dashboard with rate-change recommendations.
